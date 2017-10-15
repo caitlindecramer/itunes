@@ -1,63 +1,146 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Lato:300, 400, 700');
-img {
-    width: 100%;
-}   
-
-.quote {
-    font-variant: small-caps;
-    font-style: italic;
-    font-weight: 400;
-    text-align: center;
-    
-}
-.quote_none {
-    font-variant:none;
-    font-style: normal;
-    margin-bottom: 50px;
-    font-weight: 300;
-}
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700');
 body {
     font-family: 'Lato';
     font-weight: 300;
+    overflow-x: hidden;
+    font-size: 18px;
+    color: rgb(7,45,63);
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display';
+    
+}
+h1, h2 {
     color: rgba(233,70,81,1);
 }
+h2 {
+    font-size: 27px;
+}
+h3 {
+    font-size: 22px;
+    color: rgb(7,45,63);
+}
+h4 {
+    font-size: 20px;
+    color: rgba(233,70,81,1);
+}
+
+img {
+    width: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 400;
+}
+.quote {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 0.9em;
+    color: #17A5B7;
+    border-top: 2px solid #17A5B7;
+    padding-top: 10px;
+}
+.quote_none {
+    margin-bottom: 50px;
+    font-weight: 100;
+    border-bottom: 2px solid #17A5B7;
+    padding-bottom: 10px;
+}
+
 .line {
     border-top: double rgba(233,70,81,1) 6px;
     border-bottom: double rgba(233,70,81,1) 6px;
-    background: rgb(245,245,245);
-    margin: 20px 0px;
     
+    margin: 20px 0px;
 }
+.centered {
+    text-align: center;
+}
+
 .button_play {
     background-color: transparent;
     border: none;
     padding: 0 0 0 0;
+    display: inline;
 }
 .button_play:hover {
     border: none;
     background-color:  lightgrey;
 }
 .button_play img {
-    width: 20px;
-    
+    width: 20px;   
+}
+/* zodat mijn playknop voor de items in mijn tracklist staan */
+ol.playlist li {
+    margin-left: 75px;
+    position: relative;
+}
+
+ol.playlist li span {
+    left: -70px;
+    position: absolute;
+}
+/* mijn koopknop */
+.btn-outline-primary {
+    border: solid #17A5B7 2px;
+    color: #17A5B7;
+    font-size: 20px;
+    width: 100%;
+    margin: 15px 0px 50px 0px;
+}
+.btn-outline-primary:hover {
+    background-color: #17A5B7;
+    color: white;
+    border: solid #17A5B7 2px;
+}
+
+/* hierin zit mijn carousel zodat ik er een gekleurde achtergrond aan kon geven */
+.card {
+    background: #D9EDF3;
+    border: none;
+    border-radius: 0px;
+    margin: 50px 0px;
+    padding: 0.5em 0em;
 }
 
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+.carousel-indicators li {
+    width:0.5em;
+    height: 0.5em;
+    margin-left: 12px;
+    margin-right:12px;
+    background-color: rgba(233,70,81,0.5);
+}
+.carousel-indicators li.active{
+    background-color: rgba(233,70,81,0.9);
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+/* Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) { 
+    .carousel-indicators li {
+        width:0.7em;
+        height: 0.7em;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    body {
+        font-size: 18px;
+        color: rgb(7,45,63);
+    }
+    }

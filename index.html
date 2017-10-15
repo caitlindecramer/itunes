@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 
+   <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+
     <title>The other world</title>
+
 </head>
 <body>
 <div class="line">
@@ -21,44 +31,66 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-        <p>Kies een album en ontdek meer over de wonderbaarlijke muziek</p>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!-- De aanduiding onderaan dat aantoont op welke cover je bent -->
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <!-- tot hier -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/selah_sue/selah_sue_album2_reason.jpg" alt="Reason - Selah Sue">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/florence_and_the_machine/florence_and_the_machine_album2_ceremonials.jpg" alt="Ceremonials - Florence + the Machine">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/sia/sia_album7_this_is_acting.jpg" alt="This Is Acting - Sia">
-                </div>
+<div class="card">
+    <div class="container">   
+        <div class="row  card-body justify-content-center">
+            <div class="col-12 centered">
+                <p class="italic bold ">Kies een album en ontdek meer over de wonderbaarlijke muziek</p>
             </div>
-                <!-- Voor de pijltjes op de slideshow -->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-                </a>
-                <!-- tot hier -->
-        </div>
-    </div>  <!-- row -->
+            <div class="col-12 col-lg-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <!-- De aanduiding onderaan dat aantoont op welke cover je bent -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <!-- tot hier -->
 
-    <div class="row">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="#selah_sue_reason">
+                                    <img class="d-block w-100 " src="images/selah_sue/selah_sue_album2_reason.jpg" alt="Reason - Selah Sue">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#florence_ceremonials">
+                                    <img class="d-block w-100 " src="images/florence_and_the_machine/florence_and_the_machine_album2_ceremonials.jpg" alt="Ceremonials - Florence + the Machine">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#sia_this_is_acting">
+                                    <img class="d-block w-100 " src="images/sia/sia_album7_this_is_acting.jpg" alt="This Is Acting - Sia">
+                                </a>
+                            </div>
+                        </div>  <!-- einde carousel-inner -->
+
+                        <!-- Voor de pijltjes op de slideshow -->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- tot hier -->
+                </div> <!-- einde carousel-->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> <!-- einde div rond container -->
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row" id="selah_sue_reason">
         <div class="col-12">
             <h2>Reason - Selah Sue (2015)</h2>
         </div>
@@ -66,78 +98,154 @@
             <img src="images/selah_sue/selah_sue_album2_reason.jpg" alt="reason_cover">
         </div>
         <div class="col-12 col-lg-5">
-            <p>“Reason” is de opvolger van het debuutalbum van de Belgische Selah Sue. De nummers “Reason”, “Alone” en “I won’t go for more” zullen wellicht bekend in de oren klinken, maar ook de rest van het album zal je aangenaam verrassen.</p>
+            <p><span class="bold">“Reason”</span> is de opvolger van het debuutalbum van de Belgische Selah Sue. De nummers “Reason”, “Alone” en “I Won’t Go For More” zullen wellicht bekend in de oren klinken, maar ook de rest van het album zal je aangenaam verrassen.</p>
             <h3>Tracklist</h3>
             <p>
-                <ol>
-                    <div>
+                <ol class="playlist"> 
+                    <li>
+                        <span>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#exampleModal">
-                                    <img src="images/play.png">
-                                </button>
-                            <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Selah Sue - Alone</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <iframe width="420" height="240" src="https://www.youtube.com/embed/oiqRFvUOUH0?rel=0" frameborder="0" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <li>Alone</li>
-                        
-                        </div>
-                    <li>I Won't Go For More</li>
-                    <li>Reason</li>
-                    <li>Together</li>
-                    <li>Alive</li>
-                    <li>The Light</li>
-                    <li>Fear Nothing</li>
-                    <li>Daddy</li>
-                    <li>Sadness</li>
-                    <li>Feel</li>
-                    <li>Right Were I Want You</li>
-                    <li>Always Home</li>
-                    <li>Falling Out</li>
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/oiqRFvUOUH0?rel=0" data-titel="Alone - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Alone</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/8yDKRE2-mOs" data-titel="I Won't Go For More - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        I Won't Go For More</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/DE6950P2vXU" data-titel="Reason - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Reason</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/osPL4krgl_M" data-titel="Together - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Together</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/HJKi7kSXTiw" data-titel="Alive - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Alive</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/okxpl_x0pv0" data-titel="The Light - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        The Light</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/urEK23LO1D8" data-titel="Fear Nothing - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Fear Nothing</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/Gm5oZ1kfyHw" data-titel="Daddy - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Daddy</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/Ytwh1VFkbj0" data-titel="Sadness - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Sadness</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/3Xto8xEMoVU" data-titel="Feel - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Feel</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/OJ7q72CABXw" data-titel="Right Were I Want You - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Right Were I Want You</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/jZKdYeCvr9A" data-titel="Always Home - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Always Home</li>
+                    <li>
+                        <span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/8TydLLVmcOE" data-titel="Falling Out - Selah Sue">
+                                <img src="images/play.png">
+                            </button>
+                        </span>
+                        Falling Out</li>
                 </ol>
             </p>
-            <button type="button">I want this album!</button>
+            <a  target="#" href="https://www.bol.com/nl/p/reason/9200000038510632/?suggestionType=typedsearch">
+                <button type="button" class="btn btn-outline-primary">I want this album!</button>
+            </a>
             <h3>Andere albums van deze artiest:</h3>
         </div>
-        <div class="col-12 col-lg-3 quote">
-            <p>"Don't make me pull out the big gun
-                <br>
-                Tears like bullets and they fall like rain
-                <br>
-                Lost in the feeling words can't explain"
-                <br>
-                <div class="quote_none">- Sadness - </div>
-            </p>
-            <p>You wanna stay ashore and never ride the wave
-                <br>
-                But if you take the dive you know that you're alive
-                <br>
-                <div class="quote_none">- Feel -</div>
-            </p>
-            <p>I could sing the notes
-                <br>
-                Hopeless as they sound
-                <br>
-                They're encouraging in my head
-                <br>
-                <div class="quote_none">- I Won't Go For More -</div>
-            </p>
+        <div class="col-12 col-lg-3">
+            <div class="quote">
+                <p>"Don't make me pull out the big gun
+                    <br>
+                    Tears like bullets and they fall like rain
+                    <br>
+                    Lost in the feeling words can't explain"
+                    <br>
+                    <div class="quote_none"> ~ Sadness ~ </div>
+                </p>
+            </div>
+            <div class="quote">
+                <p>You wanna stay ashore and never ride the wave
+                    <br>
+                    But if you take the dive you know that you're alive
+                    <br>
+                    <div class="quote_none">~ Feel ~</div>
+                </p>
+            </div>
+            <div class="quote">
+                <p>I could sing the notes
+                    <br>
+                    Hopeless as they sound
+                    <br>
+                    They're encouraging in my head
+                    <br>
+                    <div class="quote_none">~ I Won't Go For More ~</div>
+                </p>
+            </div>
         </div>
     </div>   <!-- row -->
 
-    <div class="row">
+    <div class="row" id="florence_ceremonials">
             <div class="col-12">
                 <h2>Ceremonials - Florence + the Machine (2011)</h2>
             </div>
@@ -145,43 +253,137 @@
                 <img src="images/florence_and_the_machine/florence_and_the_machine_album2_ceremonials.jpg" alt="ceremonials_cover">
             </div>
             <div class="col-12 col-lg-5">
-                <p>Met “Ceremonials” neemt Florence + the je mee met orkestrale popnummers in haar eigen droomwereld. </p>
+                <p>Met <span class="bold">“Ceremonials”</span> neemt Florence je mee met orkestrale popnummers in haar eigen droomwereld. </p>
                 <h3>Tracklist</h3>
                 <p>
-                    <ol>
-                        <li>Only If For A Night</li>
-                        <li>Shake It Out</li>
-                        <li>What The Water Gave Me</li>
-                        <li>Never Let Me Go</li>
-                        <li>Breaking Down</li>
-                        <li>Lover To Lover</li>
-                        <li>No Light, No Light</li>
-                        <li>Seven Devils</li>
-                        <li>Heartlines</li>
-                        <li>Spectrum</li>
-                        <li>All This And Heaven Too</li>
-                        <li>Leave My Body</li>
+                    <ol class="playlist">
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/EPRjxkcgHuk" data-titel="Only If For A Night - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Only If For A Night</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/WbN0nX61rIs" data-titel="Shake It Out - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Shake It Out</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/am6rArVPip8" data-titel="What The Water Gave Me - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            What The Water Gave Me</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/zMBTvuUlm98" data-titel="Never Let Me Go - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Never Let Me Go</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/gXWYOF0UhCk" data-titel="Breaking Down - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Breaking Down</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/u-eTmoyP_5A" data-titel="Lover To Lover - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Lover To Lover</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/HGH-4jQZRcc" data-titel="No Light, No Light - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            No Light, No Light</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/ZIJTe1YEd9E" data-titel="Seven Devils - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Seven Devils</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/bZKgLyGjcd4" data-titel="Heartlines - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Heartlines</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/iC-_lVzdiFE" data-titel="Spectrum - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Spectrum</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/bnsCaSfEXe0" data-titel="All This And Heaven Too - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            All This And Heaven Too</li>
+                        <li>
+                            <span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/w2kYXbXPKYI" data-titel="Leave My Body - Florence + the Machine">
+                                    <img src="images/play.png">
+                                </button>
+                            </span>
+                            Leave My Body</li>
                     </ol>
                 </p>
-                <button type="button">I want this album!</button>
+                <a target="#" href="https://www.bol.com/nl/p/ceremonials/1000004011726435/?suggestionType=typedsearch">
+                    <button type="button" class="btn btn-outline-primary">I want this album!</button>
+                </a>
                 <h3>Andere albums van deze artiest:</h3>
             </div>
-            <div class="col-3 col-lg-3 quote">
-                <p>"Regrets collect like old friends"
-                    <br>
-                    <div class="quote_none">- Shake It Out - </div>
-                </p>
-                <p>"It's always darker before the dawn"
-                    <br>
-                    <div class="quote_none">- Shake It Out -</div>
-                </p>
-                <p>"..."
-                    <div class="quote_none">- ... -</div>
-                </p>
+            <div class="col-12 col-lg-3">
+                <div class="quote">
+                    <p>"Regrets collect like old friends"
+                        <br>
+                        <div class="quote_none">~ Shake It Out ~ </div>
+                    </p>
+                </div>
+                <div class="quote">
+                    <p>"Though the pressure's hard to take
+                        <br>
+                        It's the only way I can escape"
+                        <div class="quote_none">~ Never Let Me Go ~</div>
+                    </p>
+                </div>
+                <div class="quote">
+                    <p>"It's always darker before the dawn"
+                        <br>
+                        <div class="quote_none">~ Shake It Out ~</div>
+                    </p>
+                </div>
             </div>
     </div>   <!-- row -->
 
-    <div class="row">
+    <div class="row" id="sia_this_is_acting">
                 <div class="col-12">
                     <h2>This Is Acting - Sia (2016)</h2>
                 </div>
@@ -189,80 +391,178 @@
                     <img src="images/sia/sia_album7_this_is_acting.jpg" alt="this_is_acting_cover">
                 </div>
                 <div class="col-12 col-lg-5">
-                    <p>Dit is het zevende album van de Australische Sia. Ze heeft het album ‘This Is Acting’ genoemd omdat het allemaal liedjes waren die ze voor andere artiesten heeft geschreven. Het is niet de boodschap die ze zelf zou overbrengen, dus ziet ze het meer als acteren, vandaar de titel ‘This Is Acting’.</p>
+                    <p>Dit is het zevende album van de Australische Sia. Ze heeft het album <span class="bold">‘This Is Acting’</span> genoemd omdat het allemaal liedjes waren die ze voor andere artiesten heeft geschreven. Het is niet de boodschap die ze zelf zou overbrengen, dus ziet ze het meer als acteren, vandaar de titel ‘This Is Acting’.</p>
                     <h3>Tracklist</h3>
                     <p>
-                        <ol>
-                            <li>Bird Set Free</li>
-                            <li>Alive</li>
-                            <li>One Million Bullets</li>
-                            <li>Move Your Body</li>
-                            <li>Unstoppable</li>
-                            <li>Cheap Thrills</li>
-                            <li>Reaper</li>
-                                <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                        Play song
+                        <ol class="playlist">
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/4TngrGiY9II" data-titel="Bird Set Free - Sia">
+                                        <img src="images/play.png">
                                     </button>
-                                <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Sia - Reaper</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                        <iframe width="420" height="240" src="https://www.youtube.com/embed/XeM0lzQhigg?rel=0" frameborder="0" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            <li>House On Fire</li>
-                            <li>Footprints</li>
-                            <li>Sweet Design</li>
-                            <li>Broken Glass</li>
-                            <li>Space Between</li>
+                                </span>
+                                Bird Set Free</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/t2NgsJrrAyM" data-titel="Alive - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Alive</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/-4Ib25IUZ-Y" data-titel="One Million Bullets - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                One Million Bullets</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/vxrSAwtdtuQ" data-titel="Move Your Body - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Move Your Body</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/cxjvTXo9WWM" data-titel="Unstoppable - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Unstoppable</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/nEIHHydwec8" data-titel="Cheap Thrills - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Cheap Thrills</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/XeM0lzQhigg" data-titel="Reaper - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Reaper</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/tMVgLulcGQA" data-titel="House On Fire - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                House On Fire</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/gAmlaJSOyd0" data-titel="Footprints - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Footprints</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/aqX4cnsol1A" data-titel="Sweet Design - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Sweet Design</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/9dhsCYEkC9E" data-titel="Broken Glass - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Broken Glass</li>
+                            <li>
+                                <span>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary button_play" data-toggle="modal" data-target="#youtube_modal" data-youtube="https://www.youtube.com/embed/uLz0msKbjk0" data-titel="Space Between - Sia">
+                                        <img src="images/play.png">
+                                    </button>
+                                </span>
+                                Space Between</li>
                         </ol>
                     </p>
-                    <button type="button">I want this album!</button>
+                    <a target="#" href="https://www.bol.com/nl/p/this-is-acting/9200000065475864/?country=BE&Referrer=ADVNLYAH002009-5NMEIJGAYYIHC-78546363620946&utm_source=bing&utm_medium=cpc&utm_campaign=CD-titel%2520-%2520T-S%2520%255BBE%255D%2520%255BBGE%255D%2520-%2520E79&utm_term=%252Bthis%2520%252Bacting%2520%252B%2520%252Bsia&utm_content=This%2520Is%2520Acting%2520-%25209200000065475864%2520%255BB%255D">
+                        <button type="button" class="btn btn-outline-primary">I want this album!</button>
+                    </a>
                     <h3>Andere albums van deze artiest:</h3>
                 </div>
-                <div class="col-12 col-lg-3 quote">
-                    <p>"You came to take me away
-                        <br>
-                        So close I was to heaven's gates
-                        <br>
-                        But no baby, not today"
-                        <br>
-                        <div class="quote_none">- Reaper -</div>
-                    </p>
-                    <p>"I saw only two footprints in the sand
-                        <br>
-                        Thought you'd abandoned me and let go of my hand
-                        <br>
-                        But you were carrying me
-                        <br>
-                        Carrying me to safety"
-                        <br>
-                        <div class="quote_none">- Footprints -</div>
-                    </p>
-                    <p>"There's a scream inside that we all try to hide"
-                        <br>
-                        <div class="quote_none">- Bird Set Free -</div>
-                    </p>
+                <div class="col-12 col-lg-3 ">
+                    <div class="quote">
+                        <p >"You came to take me away
+                            <br>
+                            So close I was to heaven's gates
+                            <br>
+                            But no baby, not today"
+                            <br>
+                            <div class="quote_none">~ Reaper ~</div>
+                        </p>
+                    </div>
+                    <div class="quote">
+                        <p >"I saw only two footprints in the sand
+                            <br>
+                            Thought you'd abandoned me and let go of my hand
+                            <br>
+                            But you were carrying me
+                            <br>
+                            Carrying me to safety"
+                            <br>
+                            <div class="quote_none">~ Footprints ~</div>
+                        </p>
+                    </div>
+                    <div class="quote">
+                        <p>"There's a scream inside that we all try to hide"
+                            <br>
+                            <div class="quote_none">~ Bird Set Free ~</div>
+                        </p>
+                    </div>
                 </div>
     </div>   <!-- row -->
 </div>       <!-- container -->
+
+
+
+
+<!-- Modal voor bij mijn tracklist -->
+<div class="modal fade" id="youtube_modal" tabindex="-1" role="dialog" aria-labelledby="youtube_modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="youtube_modalLabel">Selah Sue - Alone</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="youtube" width="100%" height="240" src="https://www.youtube.com/embed/oiqRFvUOUH0?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+    
+    <!-- Mijn eigen javascript pagina -->    
+    <script src="main.js"></script>
     
 
 </body>
