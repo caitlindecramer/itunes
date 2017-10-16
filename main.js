@@ -14,3 +14,7 @@ $('#youtube_modal').on('show.bs.modal', function (event) {
         // do something...
         jQuery('#youtube_modal iframe').attr("src", jQuery("#youtube_modal  iframe").attr("src"));
     });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
