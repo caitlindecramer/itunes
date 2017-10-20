@@ -47,9 +47,7 @@ h4 {
 .bold {
     font-weight: 400;
 }
-.centered {
-    text-align: center;
-}
+
 
 /* voor de quote's uit liedjes */
 .quote {
@@ -158,7 +156,9 @@ ol.playlist li span {
     border: solid #17A5B7 2px;
     color: #17A5B7;
 }
-
+.tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #17A5B7 !important;
+}
 /* Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap */
 
