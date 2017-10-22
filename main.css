@@ -159,17 +159,14 @@ ol.playlist li span {
 .tooltip.bs-tooltip-bottom .arrow::before {
     border-bottom-color: #17A5B7 !important;
 }
-.tooltip.bs-tooltip-top .arrow::before {
-    border-bottom-color: #17A5B7 !important;
+
+.end {
+    margin-bottom: 450px;
 }
+
 /* Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-
-}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .line h1 {
@@ -209,7 +206,9 @@ ol.playlist li span {
         padding: 10px 10px;
         width: 125px;
     }
-    br .break {
-        content: ' '
-    }
+    br.break  {
+            content: ' '
+        }
+    
+    
     }
